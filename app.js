@@ -10,7 +10,7 @@ let mensagemDeErro = "Erro! Preencha todos os campos.";
 nome = prompt("Qual seu nome?");
 idade = prompt("Qual a sua idade?");
 
-if (nome  && idade === undefined) {
+if (nome  == "" || idade == 0) {
     alert(mensagemDeErro);    
 } else if (idade >= 18) {
         alert("Olá, " + nome + " você pode tirar habilitação.");
